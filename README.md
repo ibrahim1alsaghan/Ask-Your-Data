@@ -1,9 +1,22 @@
-# Ask Your Data 
-This application will allow to conntact with the LLM based on your DATA
+# 📄 Ask Your Data
 
-## Document Q&A System
+This application allows you to interact with a Large Language Model (LLM) based on **your own data** using Retrieval-Augmented Generation (RAG). Upload documents, ask questions, and get intelligent, context-aware answers directly from your files.
 
-A web application that allows users to upload documents, embed them using multilingual sentence transformers, store them in FAISS for efficient retrieval, and chat with an AI assistant that answers questions based on the uploaded content.
+---
+
+## 🧠 Document Q&A System (RAG-Based)
+
+A web application that enables:
+
+- 📤 Uploading of various documents (PDFs, text, etc.)
+- 🌐 Embedding using **multilingual sentence transformers**
+- 🧠 Storage and similarity search using **FAISS** for efficient document retrieval
+- 💬 Chatting with an LLM assistant that answers questions based only on the uploaded data (not its pretraining)
+
+This is a classic **RAG (Retrieval-Augmented Generation)** pipeline:
+1. **Retrieve**: Search relevant chunks from your documents using embeddings.
+2. **Augment**: Inject retrieved chunks into the LLM’s prompt.
+3. **Generate**: Get accurate, grounded answers that reference your actual data.
 
 ## Features
 
@@ -11,7 +24,7 @@ A web application that allows users to upload documents, embed them using multil
 - **Text Embedding**: Uses `intfloat/multilingual-e5-large` for multilingual embeddings
 - **Vector Storage**: FAISS for efficient similarity search
 - **Reranking**: Uses `BAAI/bge-reranker-v2-m3` for improved retrieval
-- **AI Chat**: Powered by Ollama with qwen2.5:1.5 model
+- **AI Chat**: Powered by Ollama with qwen2.5 model
 - **Modern UI**: React-based frontend with real-time chat
 
 ## Setup
