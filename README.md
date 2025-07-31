@@ -1,4 +1,7 @@
-# Document Q&A System
+# Ask Your Data 
+This application will allow to conntact with the LLM based on your DATA
+
+## Document Q&A System
 
 A web application that allows users to upload documents, embed them using multilingual sentence transformers, store them in FAISS for efficient retrieval, and chat with an AI assistant that answers questions based on the uploaded content.
 
